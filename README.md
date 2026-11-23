@@ -5,11 +5,6 @@
 **Оюутны код:** B232270107  
 **Туршилтын орчин:** Windows 11, PowerShell 7, Visual Studio Code
 
-**k6 version:** v2.2.0
-commit: 00a9a1b7f5
-Go: go1.26.5
-OS/Architecture: windows/amd64
-
 ## 1. Лабораторийн зорилго
 
 Grafana k6 ашиглан `https://test.k6.io` веб серверийн гүйцэтгэлийг хэмжиж, ачаалал нэмэгдэхэд дараах үзүүлэлтүүд хэрхэн өөрчлөгдөхийг шалгав:
@@ -31,8 +26,14 @@ Grafana k6 ашиглан `https://test.k6.io` веб серверийн гүй�
 | Git/GitHub | Хувилбарын удирдлага |
 | Visual Studio Code | Код засварлагч |
 
-Тестийн target URL: `https://test.k6.io`  
-k6 хувилбарын гаралт үр дүнгийн файлд хадгалагдаагүй.
+Тестийн target URL: `https://test.k6.io`
+
+**k6 орчны мэдээлэл:**
+- Version: `v2.2.0`
+- Commit: `00a9a1b7f5`
+- Go: `go1.26.5`
+- OS/Architecture: `windows/amd64`
+
 
 ## 3. Repository бүтэц
 
@@ -53,8 +54,15 @@ F.CSA313-lab2/
 │   ├── pass.txt
 │   └── fail.txt
 ├── screenshots/
-│   └── stages-summery.png
+|   ├── script-summery.png
+│   ├── 05vu-summery.png
+│   ├── 30-summery.png
+│   ├── 100vu-summery.png
+│   ├── stages-summery.png
+│   ├── pass-summery.png
+│   └── fail-summery.png
 └── README.md
+
 ```
 
 Бүх скрипт `https://test.k6.io` руу GET хүсэлт илгээж, HTTP status `200` болсон эсэхийг check-ээр шалгана. Нэг iteration бүрийн дараа `1s` sleep хийнэ.
